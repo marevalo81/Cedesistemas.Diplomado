@@ -1,8 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿
+using HolaMundo.Contrato;
+using System;
+using static HolaMundo.Ejemplo.Enumeraciones;
 
 namespace HolaMundo
 {
@@ -10,8 +9,22 @@ namespace HolaMundo
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hola mundo");
+            RecargasCelular recargasCelular = new RecargasCelular();
+            recargasCelular.currentOperator = Operadores.claro;
+            bool response = recargasCelular.hacerRecarga("2996903");
+            //if (response)
+            //{
+            //    Console.WriteLine("Fue exitoso");
+            //    Console.WriteLine(recargasCelular.Mensaje);
+            //}
+            //else
+            //    Console.WriteLine("Fue fallido");
+            Console.WriteLine(response ? recargasCelular.Mensaje : "fue fallido");
+            string mensaje = "Fin del ejemplo";
+            Console.WriteLine(mensaje ?? "esta vacio");
             Console.ReadLine();
+
+
         }
     }
 }

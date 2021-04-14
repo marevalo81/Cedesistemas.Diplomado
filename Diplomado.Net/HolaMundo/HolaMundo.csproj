@@ -45,6 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AsyncProgramming\Asincronos.cs" />
     <Compile Include="Contrato\Adaptadores\ContratoClaro.cs" />
     <Compile Include="Contrato\Adaptadores\ContratoMovistar.cs" />
     <Compile Include="Contrato\Adaptadores\ContratoTigo.cs" />

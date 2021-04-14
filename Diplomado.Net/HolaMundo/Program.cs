@@ -1,10 +1,12 @@
 ﻿
+using HolaMundo.AsyncProgramming;
 using HolaMundo.Contrato;
 using HolaMundo.EventosDelegados;
 using HolaMundo.Tupla;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using static HolaMundo.Ejemplo.Enumeraciones;
 
 namespace HolaMundo
@@ -31,17 +33,17 @@ namespace HolaMundo
             //Console.WriteLine(mensaje ?? "esta vacio");
             #endregion
             #region delegados
-            Del handler = Delegados.DelegateMethod;
+            //Del handler = Delegados.DelegateMethod;
 
-            //handler("Clase de .NET CORE");
-            //Delegados.MethodWithCallback(2, 5, handler);
+            ////handler("Clase de .NET CORE");
+            ////Delegados.MethodWithCallback(2, 5, handler);
 
-            Del handler2 = Delegados.DelegateMethod2;
-            Del handler3 = Delegados.DelegateMethod3;
-            Del allDelegates = handler + handler2;
-            allDelegates += handler3;
+            //Del handler2 = Delegados.DelegateMethod2;
+            //Del handler3 = Delegados.DelegateMethod3;
+            //Del allDelegates = handler + handler2;
+            //allDelegates += handler3;
 
-            allDelegates("prueba");
+            //allDelegates("prueba");
             #endregion
             #region lambdas
             //Action<string> greet = name => Console.WriteLine($"Hello {name}!");
@@ -89,6 +91,12 @@ namespace HolaMundo
 
             //Console.WriteLine($"El monto de la transaccion debe ser multiplo de {list.Item2.ToString()}");
             #endregion
+            Console.WriteLine("Comienzo a preparar el desayuno");
+            Asincronos desayuno = new Asincronos();
+            
+            Task var = desayuno.PrepararDesayuno();
+            Console.WriteLine("Termino el desayuno");
+            
             Console.ReadLine();
         }
 

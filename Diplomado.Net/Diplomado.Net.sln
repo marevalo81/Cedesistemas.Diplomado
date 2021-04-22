@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.29709.97
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HolaMundo", "HolaMundo\HolaMundo.csproj", "{F924B32D-8F51-43FD-9105-0EDFCE8AEDE4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "apiRest", "apiRest\apiRest.csproj", "{A1110397-5671-4727-9B31-1AA83841E504}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "apiRest", "apiRest\apiRest.csproj", "{A1110397-5671-4727-9B31-1AA83841E504}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

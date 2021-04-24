@@ -13,8 +13,7 @@ namespace HolaMundo.Contrato
 
         public bool cancelarRecarga(string telefono)
         {
-            Mensaje = "Funcionalidad no soportada";
-            return false;
+            throw new NotImplementedException();
         }
 
         public bool hacerRecarga(string telefono)
